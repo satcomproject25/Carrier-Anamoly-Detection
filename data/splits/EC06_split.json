@@ -1,0 +1,117 @@
+{
+  "source_id": "EC06",
+  "unit": "sweep_index",
+  "note": "core_start/core_end/all index arrays below are SWEEP indices, not row positions into the per-carrier features parquet \u2014 every carrier active in a sweep belongs to whichever split that sweep's block was assigned. Consumers must filter via df['sweep_index'].isin(...), never df.iloc[...].",
+  "n_sweeps": 329759,
+  "seed": 42,
+  "acf_decorrelation_lag_sweeps": 16487,
+  "acf_sample_curve": {
+    "1": 0.9852,
+    "2": 0.9849,
+    "5": 0.9842,
+    "10": 0.9834,
+    "20": 0.9817,
+    "50": 0.977,
+    "100": 0.9721,
+    "200": 0.9649,
+    "300": 0.9581,
+    "500": 0.9449,
+    "16487": 0.6926
+  },
+  "block_size_sweeps": 32974,
+  "guard_sweeps_per_side": 3297,
+  "n_blocks": 10,
+  "has_timestamps": true,
+  "median_interval_s": 8.0,
+  "n_train_sweeps": 187972,
+  "n_val_sweeps": 26380,
+  "n_test_sweeps": 89031,
+  "n_train_carrier_rows": 1453179,
+  "n_val_carrier_rows": 256762,
+  "n_test_carrier_rows": 857708,
+  "train_sha256": "d78d85a0ba6395c72544d12310fb4c3e137e3dd471b1a8e4f8fbaf8c3e6a32c4",
+  "val_sha256": "64339a446926cee7f1bbf6ad15abc80dea846a7b58b7e494d1bc5bbed5314b89",
+  "test_sha256": "52ad621943dba381863cd63be605c0e341841660c966e9cb54996d647672e6f3",
+  "blocks": [
+    {
+      "block_id": 0,
+      "raw_start": 0,
+      "raw_end": 32973,
+      "core_start": 0,
+      "core_end": 29676,
+      "split": "test"
+    },
+    {
+      "block_id": 1,
+      "raw_start": 32974,
+      "raw_end": 65947,
+      "core_start": 36271,
+      "core_end": 65947,
+      "split": "train"
+    },
+    {
+      "block_id": 2,
+      "raw_start": 65948,
+      "raw_end": 98921,
+      "core_start": 65948,
+      "core_end": 98921,
+      "split": "train"
+    },
+    {
+      "block_id": 3,
+      "raw_start": 98922,
+      "raw_end": 131895,
+      "core_start": 98922,
+      "core_end": 131895,
+      "split": "train"
+    },
+    {
+      "block_id": 4,
+      "raw_start": 131896,
+      "raw_end": 164869,
+      "core_start": 131896,
+      "core_end": 161572,
+      "split": "train"
+    },
+    {
+      "block_id": 5,
+      "raw_start": 164870,
+      "raw_end": 197843,
+      "core_start": 168167,
+      "core_end": 197843,
+      "split": "test"
+    },
+    {
+      "block_id": 6,
+      "raw_start": 197844,
+      "raw_end": 230817,
+      "core_start": 197844,
+      "core_end": 227520,
+      "split": "test"
+    },
+    {
+      "block_id": 7,
+      "raw_start": 230818,
+      "raw_end": 263791,
+      "core_start": 234115,
+      "core_end": 260494,
+      "split": "val"
+    },
+    {
+      "block_id": 8,
+      "raw_start": 263792,
+      "raw_end": 296765,
+      "core_start": 267089,
+      "core_end": 296765,
+      "split": "train"
+    },
+    {
+      "block_id": 9,
+      "raw_start": 296766,
+      "raw_end": 329758,
+      "core_start": 296766,
+      "core_end": 329758,
+      "split": "train"
+    }
+  ]
+}

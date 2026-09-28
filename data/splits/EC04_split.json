@@ -1,0 +1,750 @@
+{
+  "source_id": "EC04",
+  "unit": "sweep_index",
+  "note": "core_start/core_end/all index arrays below are SWEEP indices, not row positions into the per-carrier features parquet \u2014 every carrier active in a sweep belongs to whichever split that sweep's block was assigned. Consumers must filter via df['sweep_index'].isin(...), never df.iloc[...].",
+  "n_sweeps": 329746,
+  "seed": 42,
+  "acf_decorrelation_lag_sweeps": 1869,
+  "acf_sample_curve": {
+    "1": 0.8511,
+    "2": 0.8495,
+    "5": 0.8448,
+    "10": 0.8366,
+    "20": 0.8258,
+    "50": 0.7924,
+    "100": 0.7603,
+    "200": 0.7037,
+    "300": 0.6486,
+    "500": 0.5338,
+    "1869": 0.1999,
+    "16487": -0.0331
+  },
+  "block_size_sweeps": 3738,
+  "guard_sweeps_per_side": 374,
+  "n_blocks": 89,
+  "has_timestamps": true,
+  "median_interval_s": 8.0,
+  "n_train_sweeps": 183902,
+  "n_val_sweeps": 25096,
+  "n_test_sweeps": 87836,
+  "n_train_carrier_rows": 2676118,
+  "n_val_carrier_rows": 365160,
+  "n_test_carrier_rows": 1294829,
+  "train_sha256": "7618a09a125bac9ed72ef46d952810c7b7efdfa7da452b92b8bc121ce4e36b7f",
+  "val_sha256": "fd239224f0d1e562abc8f455d33b2c133904f79fa1e82b5ce576be15d9982521",
+  "test_sha256": "d44057ccf1017b28dfa5e074feb983a9726e6a4c7301d7cf5442f83a3410f67a",
+  "blocks": [
+    {
+      "block_id": 0,
+      "raw_start": 0,
+      "raw_end": 3737,
+      "core_start": 0,
+      "core_end": 3363,
+      "split": "test"
+    },
+    {
+      "block_id": 1,
+      "raw_start": 3738,
+      "raw_end": 7475,
+      "core_start": 4112,
+      "core_end": 7101,
+      "split": "val"
+    },
+    {
+      "block_id": 2,
+      "raw_start": 7476,
+      "raw_end": 11213,
+      "core_start": 7850,
+      "core_end": 10839,
+      "split": "test"
+    },
+    {
+      "block_id": 3,
+      "raw_start": 11214,
+      "raw_end": 14951,
+      "core_start": 11588,
+      "core_end": 14577,
+      "split": "train"
+    },
+    {
+      "block_id": 4,
+      "raw_start": 14952,
+      "raw_end": 18689,
+      "core_start": 15326,
+      "core_end": 18315,
+      "split": "test"
+    },
+    {
+      "block_id": 5,
+      "raw_start": 18690,
+      "raw_end": 22427,
+      "core_start": 19064,
+      "core_end": 22053,
+      "split": "val"
+    },
+    {
+      "block_id": 6,
+      "raw_start": 22428,
+      "raw_end": 26165,
+      "core_start": 22802,
+      "core_end": 25791,
+      "split": "train"
+    },
+    {
+      "block_id": 7,
+      "raw_start": 26166,
+      "raw_end": 29903,
+      "core_start": 26540,
+      "core_end": 29529,
+      "split": "test"
+    },
+    {
+      "block_id": 8,
+      "raw_start": 29904,
+      "raw_end": 33641,
+      "core_start": 30278,
+      "core_end": 33641,
+      "split": "train"
+    },
+    {
+      "block_id": 9,
+      "raw_start": 33642,
+      "raw_end": 37379,
+      "core_start": 33642,
+      "core_end": 37005,
+      "split": "train"
+    },
+    {
+      "block_id": 10,
+      "raw_start": 37380,
+      "raw_end": 41117,
+      "core_start": 37754,
+      "core_end": 40743,
+      "split": "val"
+    },
+    {
+      "block_id": 11,
+      "raw_start": 41118,
+      "raw_end": 44855,
+      "core_start": 41492,
+      "core_end": 44855,
+      "split": "train"
+    },
+    {
+      "block_id": 12,
+      "raw_start": 44856,
+      "raw_end": 48593,
+      "core_start": 44856,
+      "core_end": 48593,
+      "split": "train"
+    },
+    {
+      "block_id": 13,
+      "raw_start": 48594,
+      "raw_end": 52331,
+      "core_start": 48594,
+      "core_end": 52331,
+      "split": "train"
+    },
+    {
+      "block_id": 14,
+      "raw_start": 52332,
+      "raw_end": 56069,
+      "core_start": 52332,
+      "core_end": 56069,
+      "split": "train"
+    },
+    {
+      "block_id": 15,
+      "raw_start": 56070,
+      "raw_end": 59807,
+      "core_start": 56070,
+      "core_end": 59807,
+      "split": "train"
+    },
+    {
+      "block_id": 16,
+      "raw_start": 59808,
+      "raw_end": 63545,
+      "core_start": 59808,
+      "core_end": 63171,
+      "split": "train"
+    },
+    {
+      "block_id": 17,
+      "raw_start": 63546,
+      "raw_end": 67283,
+      "core_start": 63920,
+      "core_end": 67283,
+      "split": "test"
+    },
+    {
+      "block_id": 18,
+      "raw_start": 67284,
+      "raw_end": 71021,
+      "core_start": 67284,
+      "core_end": 70647,
+      "split": "test"
+    },
+    {
+      "block_id": 19,
+      "raw_start": 71022,
+      "raw_end": 74759,
+      "core_start": 71396,
+      "core_end": 74759,
+      "split": "train"
+    },
+    {
+      "block_id": 20,
+      "raw_start": 74760,
+      "raw_end": 78497,
+      "core_start": 74760,
+      "core_end": 78123,
+      "split": "train"
+    },
+    {
+      "block_id": 21,
+      "raw_start": 78498,
+      "raw_end": 82235,
+      "core_start": 78872,
+      "core_end": 81861,
+      "split": "test"
+    },
+    {
+      "block_id": 22,
+      "raw_start": 82236,
+      "raw_end": 85973,
+      "core_start": 82610,
+      "core_end": 85973,
+      "split": "train"
+    },
+    {
+      "block_id": 23,
+      "raw_start": 85974,
+      "raw_end": 89711,
+      "core_start": 85974,
+      "core_end": 89337,
+      "split": "train"
+    },
+    {
+      "block_id": 24,
+      "raw_start": 89712,
+      "raw_end": 93449,
+      "core_start": 90086,
+      "core_end": 93075,
+      "split": "test"
+    },
+    {
+      "block_id": 25,
+      "raw_start": 93450,
+      "raw_end": 97187,
+      "core_start": 93824,
+      "core_end": 96813,
+      "split": "val"
+    },
+    {
+      "block_id": 26,
+      "raw_start": 97188,
+      "raw_end": 100925,
+      "core_start": 97562,
+      "core_end": 100925,
+      "split": "test"
+    },
+    {
+      "block_id": 27,
+      "raw_start": 100926,
+      "raw_end": 104663,
+      "core_start": 100926,
+      "core_end": 104663,
+      "split": "test"
+    },
+    {
+      "block_id": 28,
+      "raw_start": 104664,
+      "raw_end": 108401,
+      "core_start": 104664,
+      "core_end": 108401,
+      "split": "test"
+    },
+    {
+      "block_id": 29,
+      "raw_start": 108402,
+      "raw_end": 112139,
+      "core_start": 108402,
+      "core_end": 111765,
+      "split": "test"
+    },
+    {
+      "block_id": 30,
+      "raw_start": 112140,
+      "raw_end": 115877,
+      "core_start": 112514,
+      "core_end": 115877,
+      "split": "train"
+    },
+    {
+      "block_id": 31,
+      "raw_start": 115878,
+      "raw_end": 119615,
+      "core_start": 115878,
+      "core_end": 119615,
+      "split": "train"
+    },
+    {
+      "block_id": 32,
+      "raw_start": 119616,
+      "raw_end": 123353,
+      "core_start": 119616,
+      "core_end": 122979,
+      "split": "train"
+    },
+    {
+      "block_id": 33,
+      "raw_start": 123354,
+      "raw_end": 127091,
+      "core_start": 123728,
+      "core_end": 126717,
+      "split": "test"
+    },
+    {
+      "block_id": 34,
+      "raw_start": 127092,
+      "raw_end": 130829,
+      "core_start": 127466,
+      "core_end": 130829,
+      "split": "train"
+    },
+    {
+      "block_id": 35,
+      "raw_start": 130830,
+      "raw_end": 134567,
+      "core_start": 130830,
+      "core_end": 134567,
+      "split": "train"
+    },
+    {
+      "block_id": 36,
+      "raw_start": 134568,
+      "raw_end": 138305,
+      "core_start": 134568,
+      "core_end": 138305,
+      "split": "train"
+    },
+    {
+      "block_id": 37,
+      "raw_start": 138306,
+      "raw_end": 142043,
+      "core_start": 138306,
+      "core_end": 141669,
+      "split": "train"
+    },
+    {
+      "block_id": 38,
+      "raw_start": 142044,
+      "raw_end": 145781,
+      "core_start": 142418,
+      "core_end": 145781,
+      "split": "test"
+    },
+    {
+      "block_id": 39,
+      "raw_start": 145782,
+      "raw_end": 149519,
+      "core_start": 145782,
+      "core_end": 149519,
+      "split": "test"
+    },
+    {
+      "block_id": 40,
+      "raw_start": 149520,
+      "raw_end": 153257,
+      "core_start": 149520,
+      "core_end": 152883,
+      "split": "test"
+    },
+    {
+      "block_id": 41,
+      "raw_start": 153258,
+      "raw_end": 156995,
+      "core_start": 153632,
+      "core_end": 156621,
+      "split": "train"
+    },
+    {
+      "block_id": 42,
+      "raw_start": 156996,
+      "raw_end": 160733,
+      "core_start": 157370,
+      "core_end": 160359,
+      "split": "test"
+    },
+    {
+      "block_id": 43,
+      "raw_start": 160734,
+      "raw_end": 164471,
+      "core_start": 161108,
+      "core_end": 164471,
+      "split": "train"
+    },
+    {
+      "block_id": 44,
+      "raw_start": 164472,
+      "raw_end": 168209,
+      "core_start": 164472,
+      "core_end": 168209,
+      "split": "train"
+    },
+    {
+      "block_id": 45,
+      "raw_start": 168210,
+      "raw_end": 171947,
+      "core_start": 168210,
+      "core_end": 171947,
+      "split": "train"
+    },
+    {
+      "block_id": 46,
+      "raw_start": 171948,
+      "raw_end": 175685,
+      "core_start": 171948,
+      "core_end": 175685,
+      "split": "train"
+    },
+    {
+      "block_id": 47,
+      "raw_start": 175686,
+      "raw_end": 179423,
+      "core_start": 175686,
+      "core_end": 179423,
+      "split": "train"
+    },
+    {
+      "block_id": 48,
+      "raw_start": 179424,
+      "raw_end": 183161,
+      "core_start": 179424,
+      "core_end": 183161,
+      "split": "train"
+    },
+    {
+      "block_id": 49,
+      "raw_start": 183162,
+      "raw_end": 186899,
+      "core_start": 183162,
+      "core_end": 186525,
+      "split": "train"
+    },
+    {
+      "block_id": 50,
+      "raw_start": 186900,
+      "raw_end": 190637,
+      "core_start": 187274,
+      "core_end": 190637,
+      "split": "test"
+    },
+    {
+      "block_id": 51,
+      "raw_start": 190638,
+      "raw_end": 194375,
+      "core_start": 190638,
+      "core_end": 194375,
+      "split": "test"
+    },
+    {
+      "block_id": 52,
+      "raw_start": 194376,
+      "raw_end": 198113,
+      "core_start": 194376,
+      "core_end": 197739,
+      "split": "test"
+    },
+    {
+      "block_id": 53,
+      "raw_start": 198114,
+      "raw_end": 201851,
+      "core_start": 198488,
+      "core_end": 201851,
+      "split": "train"
+    },
+    {
+      "block_id": 54,
+      "raw_start": 201852,
+      "raw_end": 205589,
+      "core_start": 201852,
+      "core_end": 205589,
+      "split": "train"
+    },
+    {
+      "block_id": 55,
+      "raw_start": 205590,
+      "raw_end": 209327,
+      "core_start": 205590,
+      "core_end": 208953,
+      "split": "train"
+    },
+    {
+      "block_id": 56,
+      "raw_start": 209328,
+      "raw_end": 213065,
+      "core_start": 209702,
+      "core_end": 212691,
+      "split": "test"
+    },
+    {
+      "block_id": 57,
+      "raw_start": 213066,
+      "raw_end": 216803,
+      "core_start": 213440,
+      "core_end": 216803,
+      "split": "train"
+    },
+    {
+      "block_id": 58,
+      "raw_start": 216804,
+      "raw_end": 220541,
+      "core_start": 216804,
+      "core_end": 220541,
+      "split": "train"
+    },
+    {
+      "block_id": 59,
+      "raw_start": 220542,
+      "raw_end": 224279,
+      "core_start": 220542,
+      "core_end": 223905,
+      "split": "train"
+    },
+    {
+      "block_id": 60,
+      "raw_start": 224280,
+      "raw_end": 228017,
+      "core_start": 224654,
+      "core_end": 228017,
+      "split": "test"
+    },
+    {
+      "block_id": 61,
+      "raw_start": 228018,
+      "raw_end": 231755,
+      "core_start": 228018,
+      "core_end": 231381,
+      "split": "test"
+    },
+    {
+      "block_id": 62,
+      "raw_start": 231756,
+      "raw_end": 235493,
+      "core_start": 232130,
+      "core_end": 235493,
+      "split": "train"
+    },
+    {
+      "block_id": 63,
+      "raw_start": 235494,
+      "raw_end": 239231,
+      "core_start": 235494,
+      "core_end": 239231,
+      "split": "train"
+    },
+    {
+      "block_id": 64,
+      "raw_start": 239232,
+      "raw_end": 242969,
+      "core_start": 239232,
+      "core_end": 242969,
+      "split": "train"
+    },
+    {
+      "block_id": 65,
+      "raw_start": 242970,
+      "raw_end": 246707,
+      "core_start": 242970,
+      "core_end": 246707,
+      "split": "train"
+    },
+    {
+      "block_id": 66,
+      "raw_start": 246708,
+      "raw_end": 250445,
+      "core_start": 246708,
+      "core_end": 250445,
+      "split": "train"
+    },
+    {
+      "block_id": 67,
+      "raw_start": 250446,
+      "raw_end": 254183,
+      "core_start": 250446,
+      "core_end": 253809,
+      "split": "train"
+    },
+    {
+      "block_id": 68,
+      "raw_start": 254184,
+      "raw_end": 257921,
+      "core_start": 254558,
+      "core_end": 257921,
+      "split": "val"
+    },
+    {
+      "block_id": 69,
+      "raw_start": 257922,
+      "raw_end": 261659,
+      "core_start": 257922,
+      "core_end": 261285,
+      "split": "val"
+    },
+    {
+      "block_id": 70,
+      "raw_start": 261660,
+      "raw_end": 265397,
+      "core_start": 262034,
+      "core_end": 265023,
+      "split": "test"
+    },
+    {
+      "block_id": 71,
+      "raw_start": 265398,
+      "raw_end": 269135,
+      "core_start": 265772,
+      "core_end": 269135,
+      "split": "train"
+    },
+    {
+      "block_id": 72,
+      "raw_start": 269136,
+      "raw_end": 272873,
+      "core_start": 269136,
+      "core_end": 272499,
+      "split": "train"
+    },
+    {
+      "block_id": 73,
+      "raw_start": 272874,
+      "raw_end": 276611,
+      "core_start": 273248,
+      "core_end": 276237,
+      "split": "test"
+    },
+    {
+      "block_id": 74,
+      "raw_start": 276612,
+      "raw_end": 280349,
+      "core_start": 276986,
+      "core_end": 279975,
+      "split": "train"
+    },
+    {
+      "block_id": 75,
+      "raw_start": 280350,
+      "raw_end": 284087,
+      "core_start": 280724,
+      "core_end": 283713,
+      "split": "val"
+    },
+    {
+      "block_id": 76,
+      "raw_start": 284088,
+      "raw_end": 287825,
+      "core_start": 284462,
+      "core_end": 287825,
+      "split": "train"
+    },
+    {
+      "block_id": 77,
+      "raw_start": 287826,
+      "raw_end": 291563,
+      "core_start": 287826,
+      "core_end": 291563,
+      "split": "train"
+    },
+    {
+      "block_id": 78,
+      "raw_start": 291564,
+      "raw_end": 295301,
+      "core_start": 291564,
+      "core_end": 295301,
+      "split": "train"
+    },
+    {
+      "block_id": 79,
+      "raw_start": 295302,
+      "raw_end": 299039,
+      "core_start": 295302,
+      "core_end": 298665,
+      "split": "train"
+    },
+    {
+      "block_id": 80,
+      "raw_start": 299040,
+      "raw_end": 302777,
+      "core_start": 299414,
+      "core_end": 302403,
+      "split": "val"
+    },
+    {
+      "block_id": 81,
+      "raw_start": 302778,
+      "raw_end": 306515,
+      "core_start": 303152,
+      "core_end": 306515,
+      "split": "train"
+    },
+    {
+      "block_id": 82,
+      "raw_start": 306516,
+      "raw_end": 310253,
+      "core_start": 306516,
+      "core_end": 309879,
+      "split": "train"
+    },
+    {
+      "block_id": 83,
+      "raw_start": 310254,
+      "raw_end": 313991,
+      "core_start": 310628,
+      "core_end": 313617,
+      "split": "test"
+    },
+    {
+      "block_id": 84,
+      "raw_start": 313992,
+      "raw_end": 317729,
+      "core_start": 314366,
+      "core_end": 317729,
+      "split": "train"
+    },
+    {
+      "block_id": 85,
+      "raw_start": 317730,
+      "raw_end": 321467,
+      "core_start": 317730,
+      "core_end": 321093,
+      "split": "train"
+    },
+    {
+      "block_id": 86,
+      "raw_start": 321468,
+      "raw_end": 325205,
+      "core_start": 321842,
+      "core_end": 324831,
+      "split": "test"
+    },
+    {
+      "block_id": 87,
+      "raw_start": 325206,
+      "raw_end": 328943,
+      "core_start": 325580,
+      "core_end": 328569,
+      "split": "train"
+    },
+    {
+      "block_id": 88,
+      "raw_start": 328944,
+      "raw_end": 329745,
+      "core_start": 329318,
+      "core_end": 329745,
+      "split": "val"
+    }
+  ]
+}
