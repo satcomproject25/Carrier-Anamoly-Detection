@@ -1,0 +1,721 @@
+{
+  "grid": {
+    "EC03": {
+      "IN_BAND_TONE": "MISSED",
+      "SHOULDER_BUMP": "MISSED",
+      "ADJACENT_CARRIER": "CAUGHT",
+      "ASYMMETRIC_DISTORTION": "MISSED",
+      "BANDWIDTH_SHIFT": "MISSED",
+      "NOISE_FLOOR_RISE": "MISSED",
+      "DROPOUT": "CAUGHT",
+      "UNAUTHORIZED_CARRIER": "MISSED"
+    },
+    "EC04": {
+      "IN_BAND_TONE": "MISSED",
+      "SHOULDER_BUMP": "MISSED",
+      "ADJACENT_CARRIER": "CAUGHT",
+      "ASYMMETRIC_DISTORTION": "CAUGHT",
+      "BANDWIDTH_SHIFT": "MISSED",
+      "NOISE_FLOOR_RISE": "MISSED",
+      "DROPOUT": "CAUGHT",
+      "UNAUTHORIZED_CARRIER": "CAUGHT"
+    },
+    "EC06": {
+      "IN_BAND_TONE": "MISSED",
+      "SHOULDER_BUMP": "MISSED",
+      "ADJACENT_CARRIER": "MISSED",
+      "ASYMMETRIC_DISTORTION": "MISSED",
+      "BANDWIDTH_SHIFT": "MISSED",
+      "NOISE_FLOOR_RISE": "MISSED",
+      "DROPOUT": "CAUGHT",
+      "UNAUTHORIZED_CARRIER": "MISSED"
+    },
+    "G16": {
+      "IN_BAND_TONE": "MISSED",
+      "SHOULDER_BUMP": "CAUGHT",
+      "ADJACENT_CARRIER": "MISSED",
+      "ASYMMETRIC_DISTORTION": "MISSED",
+      "BANDWIDTH_SHIFT": "CAUGHT",
+      "NOISE_FLOOR_RISE": "MISSED",
+      "DROPOUT": "CAUGHT",
+      "UNAUTHORIZED_CARRIER": "CAUGHT"
+    }
+  },
+  "seed_log": {
+    "EC03_IN_BAND_TONE": 0,
+    "EC03_SHOULDER_BUMP": 1,
+    "EC03_ADJACENT_CARRIER": 2,
+    "EC03_ASYMMETRIC_DISTORTION": 103,
+    "EC03_BANDWIDTH_SHIFT": 4,
+    "EC03_NOISE_FLOOR_RISE": 5,
+    "EC03_DROPOUT": 6,
+    "EC03_UNAUTHORIZED_CARRIER": 7,
+    "EC04_IN_BAND_TONE": 8,
+    "EC04_SHOULDER_BUMP": 9,
+    "EC04_ADJACENT_CARRIER": 10,
+    "EC04_ASYMMETRIC_DISTORTION": 211,
+    "EC04_BANDWIDTH_SHIFT": 12,
+    "EC04_NOISE_FLOOR_RISE": 13,
+    "EC04_DROPOUT": 14,
+    "EC04_UNAUTHORIZED_CARRIER": 15,
+    "EC06_IN_BAND_TONE": 16,
+    "EC06_SHOULDER_BUMP": 17,
+    "EC06_ADJACENT_CARRIER": 18,
+    "EC06_ASYMMETRIC_DISTORTION": 19,
+    "EC06_BANDWIDTH_SHIFT": 20,
+    "EC06_NOISE_FLOOR_RISE": 21,
+    "EC06_DROPOUT": 22,
+    "EC06_UNAUTHORIZED_CARRIER": 23,
+    "G16_IN_BAND_TONE": 24,
+    "G16_SHOULDER_BUMP": 125,
+    "G16_ADJACENT_CARRIER": 26,
+    "G16_ASYMMETRIC_DISTORTION": 127,
+    "G16_BANDWIDTH_SHIFT": 28,
+    "G16_NOISE_FLOOR_RISE": 29,
+    "G16_DROPOUT": 30,
+    "G16_UNAUTHORIZED_CARRIER": 31
+  },
+  "outcome_log": {
+    "EC03_IN_BAND_TONE": "OK",
+    "EC03_SHOULDER_BUMP": "OK",
+    "EC03_ADJACENT_CARRIER": "OK",
+    "EC03_ASYMMETRIC_DISTORTION": "OK",
+    "EC03_BANDWIDTH_SHIFT": "OK",
+    "EC03_NOISE_FLOOR_RISE": "OK",
+    "EC03_DROPOUT": "OK",
+    "EC03_UNAUTHORIZED_CARRIER": "OK",
+    "EC04_IN_BAND_TONE": "OK",
+    "EC04_SHOULDER_BUMP": "OK",
+    "EC04_ADJACENT_CARRIER": "OK",
+    "EC04_ASYMMETRIC_DISTORTION": "OK",
+    "EC04_BANDWIDTH_SHIFT": "OK",
+    "EC04_NOISE_FLOOR_RISE": "OK",
+    "EC04_DROPOUT": "OK",
+    "EC04_UNAUTHORIZED_CARRIER": "OK",
+    "EC06_IN_BAND_TONE": "OK",
+    "EC06_SHOULDER_BUMP": "OK",
+    "EC06_ADJACENT_CARRIER": "OK",
+    "EC06_ASYMMETRIC_DISTORTION": "OK",
+    "EC06_BANDWIDTH_SHIFT": "OK",
+    "EC06_NOISE_FLOOR_RISE": "OK",
+    "EC06_DROPOUT": "OK",
+    "EC06_UNAUTHORIZED_CARRIER": "OK",
+    "G16_IN_BAND_TONE": "OK",
+    "G16_SHOULDER_BUMP": "OK",
+    "G16_ADJACENT_CARRIER": "OK",
+    "G16_ASYMMETRIC_DISTORTION": "OK",
+    "G16_BANDWIDTH_SHIFT": "OK",
+    "G16_NOISE_FLOOR_RISE": "OK",
+    "G16_DROPOUT": "OK",
+    "G16_UNAUTHORIZED_CARRIER": "OK"
+  },
+  "false_positives": {
+    "EC03_IN_BAND_TONE": [],
+    "EC03_SHOULDER_BUMP": [
+      {
+        "carrier_id": 20,
+        "bin_start": null,
+        "bin_end": null,
+        "diagnosis_types": [
+          "GENERAL_DEGRADATION"
+        ]
+      }
+    ],
+    "EC03_ADJACENT_CARRIER": [],
+    "EC03_ASYMMETRIC_DISTORTION": [],
+    "EC03_BANDWIDTH_SHIFT": [],
+    "EC03_NOISE_FLOOR_RISE": [
+      {
+        "carrier_id": 2,
+        "bin_start": null,
+        "bin_end": null,
+        "diagnosis_types": [
+          "ASYMMETRIC_EDGE_DISTORTION",
+          "CARRIER_DRIFT",
+          "NOISE_FLOOR_RISE_POSSIBLE_JAMMING"
+        ]
+      }
+    ],
+    "EC03_DROPOUT": [],
+    "EC03_UNAUTHORIZED_CARRIER": [
+      {
+        "carrier_id": 30,
+        "bin_start": null,
+        "bin_end": null,
+        "diagnosis_types": [
+          "UNAUTHORIZED_CARRIER",
+          "PRELIMINARY_INSTANTANEOUS_OUTLIER",
+          "PRELIMINARY_INSTANTANEOUS_OUTLIER",
+          "PRELIMINARY_INSTANTANEOUS_OUTLIER"
+        ]
+      }
+    ],
+    "EC04_IN_BAND_TONE": [
+      {
+        "carrier_id": 23,
+        "bin_start": null,
+        "bin_end": null,
+        "diagnosis_types": [
+          "PRELIMINARY_INSTANTANEOUS_OUTLIER"
+        ]
+      }
+    ],
+    "EC04_SHOULDER_BUMP": [
+      {
+        "carrier_id": 1,
+        "bin_start": null,
+        "bin_end": null,
+        "diagnosis_types": [
+          "ASYMMETRIC_EDGE_DISTORTION",
+          "ASYMMETRIC_EDGE_DISTORTION"
+        ]
+      },
+      {
+        "carrier_id": 2,
+        "bin_start": null,
+        "bin_end": null,
+        "diagnosis_types": [
+          "GENERAL_DEGRADATION"
+        ]
+      },
+      {
+        "carrier_id": 3,
+        "bin_start": null,
+        "bin_end": null,
+        "diagnosis_types": [
+          "GENERAL_DEGRADATION"
+        ]
+      },
+      {
+        "carrier_id": 4,
+        "bin_start": null,
+        "bin_end": null,
+        "diagnosis_types": [
+          "GENERAL_DEGRADATION"
+        ]
+      },
+      {
+        "carrier_id": 5,
+        "bin_start": null,
+        "bin_end": null,
+        "diagnosis_types": [
+          "GENERAL_DEGRADATION"
+        ]
+      },
+      {
+        "carrier_id": 9,
+        "bin_start": null,
+        "bin_end": null,
+        "diagnosis_types": [
+          "GENERAL_DEGRADATION"
+        ]
+      },
+      {
+        "carrier_id": 10,
+        "bin_start": null,
+        "bin_end": null,
+        "diagnosis_types": [
+          "GENERAL_DEGRADATION"
+        ]
+      },
+      {
+        "carrier_id": 12,
+        "bin_start": null,
+        "bin_end": null,
+        "diagnosis_types": [
+          "GENERAL_DEGRADATION"
+        ]
+      }
+    ],
+    "EC04_ADJACENT_CARRIER": [
+      {
+        "carrier_id": 12,
+        "bin_start": null,
+        "bin_end": null,
+        "diagnosis_types": [
+          "GENERAL_DEGRADATION"
+        ]
+      }
+    ],
+    "EC04_ASYMMETRIC_DISTORTION": [
+      {
+        "carrier_id": 3,
+        "bin_start": null,
+        "bin_end": null,
+        "diagnosis_types": [
+          "GENERAL_DEGRADATION"
+        ]
+      },
+      {
+        "carrier_id": 4,
+        "bin_start": null,
+        "bin_end": null,
+        "diagnosis_types": [
+          "GENERAL_DEGRADATION"
+        ]
+      },
+      {
+        "carrier_id": 5,
+        "bin_start": null,
+        "bin_end": null,
+        "diagnosis_types": [
+          "GENERAL_DEGRADATION"
+        ]
+      },
+      {
+        "carrier_id": 6,
+        "bin_start": null,
+        "bin_end": null,
+        "diagnosis_types": [
+          "NOISE_FLOOR_RISE_POSSIBLE_JAMMING"
+        ]
+      },
+      {
+        "carrier_id": 10,
+        "bin_start": null,
+        "bin_end": null,
+        "diagnosis_types": [
+          "GENERAL_DEGRADATION"
+        ]
+      },
+      {
+        "carrier_id": 11,
+        "bin_start": null,
+        "bin_end": null,
+        "diagnosis_types": [
+          "GENERAL_DEGRADATION"
+        ]
+      },
+      {
+        "carrier_id": 13,
+        "bin_start": null,
+        "bin_end": null,
+        "diagnosis_types": [
+          "GENERAL_DEGRADATION"
+        ]
+      }
+    ],
+    "EC04_BANDWIDTH_SHIFT": [],
+    "EC04_NOISE_FLOOR_RISE": [],
+    "EC04_DROPOUT": [
+      {
+        "carrier_id": 1,
+        "bin_start": null,
+        "bin_end": null,
+        "diagnosis_types": [
+          "GENERAL_DEGRADATION"
+        ]
+      },
+      {
+        "carrier_id": 2,
+        "bin_start": null,
+        "bin_end": null,
+        "diagnosis_types": [
+          "GENERAL_DEGRADATION"
+        ]
+      },
+      {
+        "carrier_id": 3,
+        "bin_start": null,
+        "bin_end": null,
+        "diagnosis_types": [
+          "ASYMMETRIC_EDGE_DISTORTION"
+        ]
+      },
+      {
+        "carrier_id": 4,
+        "bin_start": null,
+        "bin_end": null,
+        "diagnosis_types": [
+          "IN_BAND_INTERFERENCE"
+        ]
+      },
+      {
+        "carrier_id": 5,
+        "bin_start": null,
+        "bin_end": null,
+        "diagnosis_types": [
+          "NOISE_FLOOR_RISE_POSSIBLE_JAMMING"
+        ]
+      },
+      {
+        "carrier_id": 10,
+        "bin_start": null,
+        "bin_end": null,
+        "diagnosis_types": [
+          "GENERAL_DEGRADATION"
+        ]
+      }
+    ],
+    "EC04_UNAUTHORIZED_CARRIER": [],
+    "EC06_IN_BAND_TONE": [
+      {
+        "carrier_id": 74,
+        "bin_start": null,
+        "bin_end": null,
+        "diagnosis_types": [
+          "UNAUTHORIZED_CARRIER",
+          "PRELIMINARY_INSTANTANEOUS_OUTLIER"
+        ]
+      },
+      {
+        "carrier_id": 66,
+        "bin_start": null,
+        "bin_end": null,
+        "diagnosis_types": [
+          "PRELIMINARY_INSTANTANEOUS_OUTLIER",
+          "PRELIMINARY_INSTANTANEOUS_OUTLIER"
+        ]
+      }
+    ],
+    "EC06_SHOULDER_BUMP": [],
+    "EC06_ADJACENT_CARRIER": [
+      {
+        "carrier_id": 119,
+        "bin_start": null,
+        "bin_end": null,
+        "diagnosis_types": [
+          "UNAUTHORIZED_CARRIER"
+        ]
+      },
+      {
+        "carrier_id": 78,
+        "bin_start": null,
+        "bin_end": null,
+        "diagnosis_types": [
+          "NOISE_FLOOR_RISE_POSSIBLE_JAMMING"
+        ]
+      }
+    ],
+    "EC06_ASYMMETRIC_DISTORTION": [
+      {
+        "carrier_id": 213,
+        "bin_start": null,
+        "bin_end": null,
+        "diagnosis_types": [
+          "ASYMMETRIC_EDGE_DISTORTION",
+          "NOISE_FLOOR_RISE_POSSIBLE_JAMMING"
+        ]
+      },
+      {
+        "carrier_id": 211,
+        "bin_start": null,
+        "bin_end": null,
+        "diagnosis_types": [
+          "PRELIMINARY_INSTANTANEOUS_OUTLIER"
+        ]
+      },
+      {
+        "carrier_id": 216,
+        "bin_start": null,
+        "bin_end": null,
+        "diagnosis_types": [
+          "UNAUTHORIZED_CARRIER",
+          "PRELIMINARY_INSTANTANEOUS_OUTLIER"
+        ]
+      }
+    ],
+    "EC06_BANDWIDTH_SHIFT": [
+      {
+        "carrier_id": 70,
+        "bin_start": null,
+        "bin_end": null,
+        "diagnosis_types": [
+          "UNAUTHORIZED_CARRIER",
+          "PRELIMINARY_INSTANTANEOUS_OUTLIER",
+          "PRELIMINARY_INSTANTANEOUS_OUTLIER"
+        ]
+      }
+    ],
+    "EC06_NOISE_FLOOR_RISE": [],
+    "EC06_DROPOUT": [
+      {
+        "carrier_id": 69,
+        "bin_start": null,
+        "bin_end": null,
+        "diagnosis_types": [
+          "PRELIMINARY_INSTANTANEOUS_OUTLIER"
+        ]
+      },
+      {
+        "carrier_id": 4,
+        "bin_start": null,
+        "bin_end": null,
+        "diagnosis_types": [
+          "ADJACENT_CHANNEL_INTERFERENCE"
+        ]
+      },
+      {
+        "carrier_id": 89,
+        "bin_start": null,
+        "bin_end": null,
+        "diagnosis_types": [
+          "UNAUTHORIZED_CARRIER"
+        ]
+      }
+    ],
+    "EC06_UNAUTHORIZED_CARRIER": [
+      {
+        "carrier_id": 6,
+        "bin_start": null,
+        "bin_end": null,
+        "diagnosis_types": [
+          "UNAUTHORIZED_CARRIER",
+          "PRELIMINARY_INSTANTANEOUS_OUTLIER",
+          "PRELIMINARY_INSTANTANEOUS_OUTLIER",
+          "PRELIMINARY_INSTANTANEOUS_OUTLIER",
+          "PRELIMINARY_INSTANTANEOUS_OUTLIER"
+        ]
+      }
+    ],
+    "G16_IN_BAND_TONE": [
+      {
+        "carrier_id": 63,
+        "bin_start": null,
+        "bin_end": null,
+        "diagnosis_types": [
+          "UNAUTHORIZED_CARRIER"
+        ]
+      }
+    ],
+    "G16_SHOULDER_BUMP": [
+      {
+        "carrier_id": 1,
+        "bin_start": null,
+        "bin_end": null,
+        "diagnosis_types": [
+          "GENERAL_DEGRADATION"
+        ]
+      },
+      {
+        "carrier_id": 2,
+        "bin_start": null,
+        "bin_end": null,
+        "diagnosis_types": [
+          "GENERAL_DEGRADATION"
+        ]
+      }
+    ],
+    "G16_ADJACENT_CARRIER": [
+      {
+        "carrier_id": 257,
+        "bin_start": null,
+        "bin_end": null,
+        "diagnosis_types": [
+          "UNAUTHORIZED_CARRIER",
+          "PRELIMINARY_INSTANTANEOUS_OUTLIER",
+          "PRELIMINARY_INSTANTANEOUS_OUTLIER",
+          "PRELIMINARY_INSTANTANEOUS_OUTLIER"
+        ]
+      },
+      {
+        "carrier_id": 0,
+        "bin_start": null,
+        "bin_end": null,
+        "diagnosis_types": [
+          "GENERAL_DEGRADATION"
+        ]
+      },
+      {
+        "carrier_id": 258,
+        "bin_start": null,
+        "bin_end": null,
+        "diagnosis_types": [
+          "UNAUTHORIZED_CARRIER",
+          "PRELIMINARY_INSTANTANEOUS_OUTLIER",
+          "PRELIMINARY_INSTANTANEOUS_OUTLIER",
+          "PRELIMINARY_INSTANTANEOUS_OUTLIER",
+          "PRELIMINARY_INSTANTANEOUS_OUTLIER"
+        ]
+      }
+    ],
+    "G16_ASYMMETRIC_DISTORTION": [
+      {
+        "carrier_id": 51,
+        "bin_start": null,
+        "bin_end": null,
+        "diagnosis_types": [
+          "PRELIMINARY_INSTANTANEOUS_OUTLIER",
+          "PRELIMINARY_INSTANTANEOUS_OUTLIER",
+          "PRELIMINARY_INSTANTANEOUS_OUTLIER"
+        ]
+      },
+      {
+        "carrier_id": 58,
+        "bin_start": null,
+        "bin_end": null,
+        "diagnosis_types": [
+          "PRELIMINARY_INSTANTANEOUS_OUTLIER",
+          "PRELIMINARY_INSTANTANEOUS_OUTLIER",
+          "PRELIMINARY_INSTANTANEOUS_OUTLIER",
+          "PRELIMINARY_INSTANTANEOUS_OUTLIER"
+        ]
+      }
+    ],
+    "G16_BANDWIDTH_SHIFT": [
+      {
+        "carrier_id": 1,
+        "bin_start": null,
+        "bin_end": null,
+        "diagnosis_types": [
+          "GENERAL_DEGRADATION"
+        ]
+      },
+      {
+        "carrier_id": 2,
+        "bin_start": null,
+        "bin_end": null,
+        "diagnosis_types": [
+          "GENERAL_DEGRADATION"
+        ]
+      },
+      {
+        "carrier_id": 290,
+        "bin_start": null,
+        "bin_end": null,
+        "diagnosis_types": [
+          "UNAUTHORIZED_CARRIER",
+          "PRELIMINARY_INSTANTANEOUS_OUTLIER",
+          "PRELIMINARY_INSTANTANEOUS_OUTLIER",
+          "PRELIMINARY_INSTANTANEOUS_OUTLIER"
+        ]
+      },
+      {
+        "carrier_id": 291,
+        "bin_start": null,
+        "bin_end": null,
+        "diagnosis_types": [
+          "UNAUTHORIZED_CARRIER",
+          "PRELIMINARY_INSTANTANEOUS_OUTLIER",
+          "PRELIMINARY_INSTANTANEOUS_OUTLIER"
+        ]
+      },
+      {
+        "carrier_id": 292,
+        "bin_start": null,
+        "bin_end": null,
+        "diagnosis_types": [
+          "UNAUTHORIZED_CARRIER",
+          "PRELIMINARY_INSTANTANEOUS_OUTLIER",
+          "PRELIMINARY_INSTANTANEOUS_OUTLIER",
+          "PRELIMINARY_INSTANTANEOUS_OUTLIER",
+          "PRELIMINARY_INSTANTANEOUS_OUTLIER"
+        ]
+      },
+      {
+        "carrier_id": 293,
+        "bin_start": null,
+        "bin_end": null,
+        "diagnosis_types": [
+          "UNAUTHORIZED_CARRIER",
+          "PRELIMINARY_INSTANTANEOUS_OUTLIER",
+          "PRELIMINARY_INSTANTANEOUS_OUTLIER",
+          "PRELIMINARY_INSTANTANEOUS_OUTLIER",
+          "PRELIMINARY_INSTANTANEOUS_OUTLIER",
+          "PRELIMINARY_INSTANTANEOUS_OUTLIER"
+        ]
+      }
+    ],
+    "G16_NOISE_FLOOR_RISE": [],
+    "G16_DROPOUT": [],
+    "G16_UNAUTHORIZED_CARRIER": [
+      {
+        "carrier_id": 0,
+        "bin_start": null,
+        "bin_end": null,
+        "diagnosis_types": [
+          "GENERAL_DEGRADATION"
+        ]
+      },
+      {
+        "carrier_id": 1,
+        "bin_start": null,
+        "bin_end": null,
+        "diagnosis_types": [
+          "ASYMMETRIC_EDGE_DISTORTION",
+          "BANDWIDTH_ANOMALY"
+        ]
+      },
+      {
+        "carrier_id": 2,
+        "bin_start": null,
+        "bin_end": null,
+        "diagnosis_types": [
+          "CARRIER_DRIFT"
+        ]
+      },
+      {
+        "carrier_id": 308,
+        "bin_start": null,
+        "bin_end": null,
+        "diagnosis_types": [
+          "UNAUTHORIZED_CARRIER",
+          "PRELIMINARY_INSTANTANEOUS_OUTLIER",
+          "PRELIMINARY_INSTANTANEOUS_OUTLIER"
+        ]
+      },
+      {
+        "carrier_id": 310,
+        "bin_start": null,
+        "bin_end": null,
+        "diagnosis_types": [
+          "UNAUTHORIZED_CARRIER",
+          "PRELIMINARY_INSTANTANEOUS_OUTLIER",
+          "PRELIMINARY_INSTANTANEOUS_OUTLIER",
+          "PRELIMINARY_INSTANTANEOUS_OUTLIER",
+          "PRELIMINARY_INSTANTANEOUS_OUTLIER"
+        ]
+      },
+      {
+        "carrier_id": 311,
+        "bin_start": null,
+        "bin_end": null,
+        "diagnosis_types": [
+          "UNAUTHORIZED_CARRIER",
+          "PRELIMINARY_INSTANTANEOUS_OUTLIER",
+          "PRELIMINARY_INSTANTANEOUS_OUTLIER",
+          "PRELIMINARY_INSTANTANEOUS_OUTLIER",
+          "PRELIMINARY_INSTANTANEOUS_OUTLIER",
+          "PRELIMINARY_INSTANTANEOUS_OUTLIER"
+        ]
+      },
+      {
+        "carrier_id": 312,
+        "bin_start": null,
+        "bin_end": null,
+        "diagnosis_types": [
+          "UNAUTHORIZED_CARRIER",
+          "PRELIMINARY_INSTANTANEOUS_OUTLIER",
+          "PRELIMINARY_INSTANTANEOUS_OUTLIER",
+          "PRELIMINARY_INSTANTANEOUS_OUTLIER",
+          "PRELIMINARY_INSTANTANEOUS_OUTLIER",
+          "PRELIMINARY_INSTANTANEOUS_OUTLIER"
+        ]
+      }
+    ]
+  },
+  "level": "obvious",
+  "seed_formula": "base_seed = STATIONS.index(station)*8 + ALL_TYPES.index(type); on non-OK outcome, retries base_seed + attempt*100 up to 10 tries",
+  "stations_order": [
+    "EC03",
+    "EC04",
+    "EC06",
+    "G16"
+  ],
+  "types_order": [
+    "IN_BAND_TONE",
+    "SHOULDER_BUMP",
+    "ADJACENT_CARRIER",
+    "ASYMMETRIC_DISTORTION",
+    "BANDWIDTH_SHIFT",
+    "NOISE_FLOOR_RISE",
+    "DROPOUT",
+    "UNAUTHORIZED_CARRIER"
+  ],
+  "production_setup": {
+    "EC03": "pooled (session22) + per-station threshold (session23)",
+    "EC06": "pooled (session22) + per-station threshold (session23)",
+    "EC04": "session 18 per-source dedicated model",
+    "G16": "session 18 per-source dedicated model"
+  }
+}
