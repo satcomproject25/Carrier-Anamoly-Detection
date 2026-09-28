@@ -1,0 +1,38 @@
+{
+  "EC03": {
+    "if_alone_threshold": 1.6638820118950586,
+    "per_feature_thresholds": {
+      "n_secondary_peaks_in_span": 0.0,
+      "rise_overshoot_frac_of_rise_span": 0.02274425078331165,
+      "fall_overshoot_frac_of_fall_span": 0.02302606225890364,
+      "plateau_ripple_frac_of_plateau_range": 0.06488143546320572
+    }
+  },
+  "EC06": {
+    "if_alone_threshold": 4.784975305129604,
+    "per_feature_thresholds": {
+      "n_secondary_peaks_in_span": 2.0,
+      "rise_overshoot_frac_of_rise_span": 1.2566940990484323,
+      "fall_overshoot_frac_of_fall_span": 1.7106636944645612,
+      "plateau_ripple_frac_of_plateau_range": 0.06891817890004612
+    }
+  },
+  "G16": {
+    "if_alone_threshold": 2.9563542427575915,
+    "per_feature_thresholds": {
+      "n_secondary_peaks_in_span": 2.0,
+      "rise_overshoot_frac_of_rise_span": 0.06501985835942492,
+      "fall_overshoot_frac_of_fall_span": 0.0603893420365455,
+      "plateau_ripple_frac_of_plateau_range": 0.06949063113189487
+    }
+  },
+  "EC04": {
+    "if_alone_threshold": 2.857204799954046,
+    "per_feature_thresholds": {
+      "n_secondary_peaks_in_span": 0.0,
+      "rise_overshoot_frac_of_rise_span": 0.021220889916663797,
+      "fall_overshoot_frac_of_fall_span": 0.015026746009423475,
+      "plateau_ripple_frac_of_plateau_range": 0.07608211647076284
+    }
+  }
+}
